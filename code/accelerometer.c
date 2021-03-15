@@ -73,7 +73,6 @@ int main() {
         alt_up_accelerometer_spi_read_x_axis(acc_dev, & x_read);
         // alt_printf("raw data: %x\n", x_read);
         convert_read(x_read, & level, & led);
-
     }
 
     return 0;
