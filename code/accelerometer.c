@@ -69,12 +69,10 @@ int main() {
 
     timer_init(sys_timer_isr);
     while (1) {
-
         alt_up_accelerometer_spi_read_x_axis(acc_dev, & x_read);
         // alt_printf("raw data: %x\n", x_read);
         convert_read(x_read, & level, & led);
     }
-
     return 0;
 }
 
